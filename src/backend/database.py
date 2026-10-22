@@ -111,8 +111,8 @@ initial_activities = {
     },
     "Manga Maniacs": {
         "description": "Dive into the action-packed worlds of Japanese manga, meet unforgettable heroes, and share your favorite adventures with fellow fans.",
-        "schedule": "Tuesdays, 7:00 PM",
-        "max_participants": 15,
+        "schedule": "Tuesdays, 5:00 PM",
+        "max_participants": 25,
         "participants": []
     },
     "Math Club": {

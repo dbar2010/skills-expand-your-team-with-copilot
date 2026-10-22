@@ -492,9 +492,9 @@ document.addEventListener("DOMContentLoaded", () => {
     whatsappUrl.searchParams.set("text", `${shareText} ${activityUrl.href}`);
     const facebookUrl = new URL("https://www.facebook.com/sharer/sharer.php");
     facebookUrl.searchParams.set("u", activityUrl.href);
-    const emailUrl = new URL("mailto:");
-    emailUrl.searchParams.set("subject", `${name} at Mergington High School`);
-    emailUrl.searchParams.set("body", `${shareText}\n\n${activityUrl.href}`);
+    const emailSubject = encodeURIComponent(`${name} at Mergington High School`);
+    const emailBody = encodeURIComponent(`${shareText}\n\n${activityUrl.href}`);
+    const emailUrl = new URL(`mailto:?subject=${emailSubject}&body=${emailBody}`);
 
     [
       ["WhatsApp", whatsappUrl],

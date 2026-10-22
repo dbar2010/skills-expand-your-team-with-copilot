@@ -183,6 +183,42 @@ section h3 {
   line-height: 1.4;
 }
 
+.activity-sharing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-light);
+}
+
+.sharing-label,
+.sharing-status {
+  width: 100%;
+  color: var(--text-secondary);
+}
+
+.sharing-status {
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+
+.sharing-status:empty {
+  display: none;
+}
+
+.sharing-link {
+  color: var(--primary);
+  padding: 6px 0;
+}
+
+.sharing-link:focus-visible,
+.activity-sharing button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
 .activity-card-actions {
   margin-top: auto;
   padding-top: 10px;

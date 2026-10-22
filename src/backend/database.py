@@ -109,6 +109,12 @@ initial_activities = {
         "max_participants": 20,
         "participants": ["ella@mergington.edu", "scarlett@mergington.edu"]
     },
+    "Manga Maniacs": {
+        "description": "Dive into the action-packed worlds of Japanese manga, meet unforgettable heroes, and share your favorite adventures with fellow fans.",
+        "schedule": "Tuesdays, 5:00 PM",
+        "max_participants": 25,
+        "participants": []
+    },
     "Math Club": {
         "description": "Solve challenging problems and prepare for math competitions",
         "schedule": "Tuesdays, 7:15 AM - 8:00 AM",
@@ -186,4 +192,3 @@ initial_teachers = [
         "role": "admin"
     }
 ]
-
